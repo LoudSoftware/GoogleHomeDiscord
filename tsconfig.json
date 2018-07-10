@@ -8,7 +8,7 @@
     "newLine": "LF",
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
-    "noImplicitReturns": true,
+    "noImplicitReturns": false,
     "noImplicitThis": false,
     "noUnusedParameters": false,
     "noUnusedLocals": true,

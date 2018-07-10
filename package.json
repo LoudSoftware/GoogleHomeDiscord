@@ -19,6 +19,11 @@
     "doc": "typedoc --out ./doc/ --name 'Typescript-rest-Boilerplate' --readme ./README.MD --module commonjs --target ES6 --includeDeclarations --excludePrivate --excludeExternals ./src"
   },
   "dependencies": {
+    "discord.js": "^11.3.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^6.0.0",
+    "ffmpeg-binaries": "^4.0.0",
+    "node-opus": "^0.3.0",
     "typescript-ioc": "1.2.4",
     "typescript-rest": "1.6.1",
     "typescript-rest-swagger": "0.0.19"
@@ -26,9 +31,10 @@
   "devDependencies": {
     "@types/chai": "4.1.4",
     "@types/cors": "2.8.4",
+    "@types/dotenv": "^4.0.3",
+    "@types/express": "4.16.0",
     "@types/mocha": "5.2.3",
     "@types/request": "2.47.1",
-    "@types/express": "4.16.0",
     "chai": "4.1.2",
     "cross-env": "5.2.0",
     "istanbul": "0.4.5",

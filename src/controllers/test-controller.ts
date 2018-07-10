@@ -1,4 +1,5 @@
 import {GET, Path, PathParam} from 'typescript-rest';
+import { discordBot } from "../index";
 
 @Path('/test')
 export class TestController {
@@ -9,7 +10,9 @@ export class TestController {
      */
     @Path(':name')
     @GET
-    sayTest(@PathParam('name') name: string): string {
+    async sayTest(@PathParam('name') name: string): Promise<string> {
+        await discordBot.client.user.setActivity(`got request: ${name}`);
+        console.log(`API got a GET with: ${name}`);
         return `Testing ${name}`;
     }
 }
